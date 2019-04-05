@@ -1,0 +1,45 @@
+.moneybtn:not(:last-child) {
+    margin-right: 27px;
+}
+
+.table-bg-red {
+    background-color: #ff376014;
+}
+
+th {
+    color: #ff3760 !important;
+}
+
+.responsive {
+    width: 500px;
+}
+
+@media only screen and (max-width : 320px) {
+    .responsive {
+        width: 100vw;
+    }
+
+    .table td,
+    .table th {
+        font-size: 13px;
+    }
+
+    .moneybtn:first-child,
+    .moneybtn:nth-child(2) {
+        margin-top: 5px;
+    }
+
+    .moneybtn {
+        margin-bottom: 15px;
+    }
+}
+.button.is-danger.is-outlined:hover {
+    background-color: white;
+    border-color: #ff3860;
+    color: #ff3860;
+}
+.moneybtn.button.is-danger.selected {
+    background-color: #ff3860;
+    border-color: #ff3860;
+    color: #fff;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "XEU",
+    "short_name": "xeu",
+    "description": "Progressive Web Application about foreign exchange rates and currency conversion.",
+    "lang": "fr-FR",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "any",
+    "theme_color": "#ff3760"
+  }
