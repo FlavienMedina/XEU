@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>XEU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <style>
+        .moneybtn:not(:last-child) {
+            margin-right: 27px;
+        }
+
+        .table-bg-red {
+            background-color: #ff376014;
+        }
+
+        th {
+            color: #ff3760 !important;
+        }
+
+        .responsive {
+            width: 500px;
+        }
+
+        @media only screen and (max-width : 320px) {
+            .responsive {
+                width: 100vw;
+            }
+
+            .table td,
+            .table th {
+                font-size: 13px;
+            }
+
+            .moneybtn:first-child,
+            .moneybtn:nth-child(2) {
+                margin-top: 5px;
+            }
+
+            .moneybtn {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="has-background-danger is-small">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title has-text-white-bis">XEU</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero container is-fluid">
+        <div class="responsive" style="margin:0 auto;margin-top:45px">
+            <input id="search" class="input" type="text" placeholder="Enter a currency">
+            <div style="text-align: center;padding: 15px 0;">
+                <a class="moneybtn button is-danger is-rounded is-outlined">Dollars</a>
+                <a class="moneybtn button is-danger is-rounded is-outlined">Dinar</a>
+                <a class="moneybtn button is-danger is-rounded is-outlined">Livres</a>
+                <a class="moneybtn button is-danger is-rounded is-outlined">Pesos</a>
+                <a class="moneybtn button is-danger is-rounded is-outlined">Yen</a>
+            </div>
+            <a class="button is-fullwidth is-danger">Convert</a>
+
+        </div>
+    </section>
+    <section class="hero container is-fluid">
+        <div class="responsive" style="margin:0 auto;margin-top:25px">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>Euros</th>
+                        <th>Dollars</th>
+                        <th>Dinar</th>
+                        <th>Livres</th>
+                        <th>Pesos</th>
+                        <th>Yen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-bg-red">
+                        <td>1</td>
+                        <td>38</td>
+                        <td>23</td>
+                        <td>12</td>
+                        <td>3</td>
+                        <td>68</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
